@@ -45,23 +45,6 @@ MAIL_TLS=True
 MAIL_SSL=False
 
 
-#структура проекта
-
-Marketplace_blog_fastapi/
-├── src/
-│   ├── auth/               # аутентификация (модели, роуты, утилиты JWT/email)
-│   ├── categories/         # категории (модели, роуты – можно расширить)
-│   ├── publications/       # публикации (модели, роуты, CRUD)
-│   ├── database/           # подключение к БД, сессии
-│   ├── schemas.py          # Pydantic схемы
-│   └── __init__.py         # основной app FastAPI
-├── tests/                  # синхронные тесты (pytest + requests)
-├── migrations/             # Alembic миграции
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── .env
-└── README.md
 
 #API эндпоинты
 
