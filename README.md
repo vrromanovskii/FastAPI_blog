@@ -20,9 +20,9 @@
 
 #.env файл
 
-POSTGRES_USER=*****
+POSTGRES_USER=sVlads4
 
-POSTGRES_PASSWORD=****
+POSTGRES_PASSWORD=simplepass
 
 POSTGRES_DB=marketplace_db
 
