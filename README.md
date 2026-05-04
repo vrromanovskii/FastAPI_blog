@@ -21,17 +21,27 @@
 #.env файл
 
 POSTGRES_USER=*****
+
 POSTGRES_PASSWORD=****
+
 POSTGRES_DB=marketplace_db
+
 DATABASE_URL=postgresql+asyncpg://sVlads4:simplepass@db:5432/marketplace_db
+
 SECRET_KEY=your-secret-key-here
 
 MAIL_USERNAME=your-email@gmail.com
+
 MAIL_PASSWORD=your-app-password
+
 MAIL_FROM=your-email@gmail.com
+
 MAIL_PORT=587
+
 MAIL_SERVER=smtp.gmail.com
+
 MAIL_TLS=True
+
 MAIL_SSL=False
 
 
@@ -56,13 +66,22 @@ Marketplace_blog_fastapi/
 #API эндпоинты
 
 Метод	Эндпоинт	Описание	Доступ
+
 POST	/auth/register	регистрация	любой
+
 POST	/auth/login	вход (токен)	любой
+
 GET	/auth/me	информация о текущем пользователе	авторизованный
+
 POST	/publication/create	создание публикации	авторизованный
+
 GET	/publication/get_all	список публикаций (пагинация)	любой
+
 GET	/publication/deleted	список удалённых публикаций	любой
+
 PATCH	/publication/edit/{id}	редактирование	только автор
+
 DELETE	/publication/delete/{id}	мягкое удаление	только автор
+
 POST	/publication/restore/{id}	восстановление	только автор
 
